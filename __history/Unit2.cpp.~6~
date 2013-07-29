@@ -1,0 +1,91 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+#include "Unit2.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+TForm2 *Form2;
+//---------------------------------------------------------------------------
+__fastcall TForm2::TForm2(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::Button1Click(TObject *Sender)
+{
+
+if(Form1->Buffer.size() > 0)
+{
+	int result = MessageBoxA(NULL, "Сохранить в файл?", "Буфер содержит данные ", MB_YESNO );
+	if (result == IDYES) { Form1->MenuItem5Click(Sender);}
+}
+
+
+if(OpenDialog1->Execute())
+{
+	long int size;
+
+	if(RadioButton1->IsChecked)
+	{
+		size = Edit1->Text.ToInt();
+	}
+
+	if(RadioButton2->IsChecked)
+	{
+		size = Edit1->Text.ToInt() * 1024;
+	}
+
+	if(RadioButton3->IsChecked)
+	{
+		size = Edit1->Text.ToInt() * 1048576;
+	}
+
+	wchar_t  *wc = OpenDialog1->FileName.t_str();
+	char * c = new char[Edit1->Text.Length()];
+	wcstombs(c, wc, wcslen(wc)+1);
+
+	int handle=open(c, O_CREAT|O_RDWR);
+	if(handle!=-1)
+	{
+		chsize(handle,size);
+		close(handle);
+	}
+
+
+
+	Form1->Buffer.clear();
+
+	fileBufferRecord(OpenDialog1->FileName.c_str());
+/*
+
+    	ifstream fileOpen(OpenDialog1->FileName.c_str(), std::ios::in | std::ios::binary);
+
+    	if( !fileOpen )
+    	{
+    		ShowMessage("File open error!");
+    	}
+
+    	ifstream::pos_type size2 = 0;
+
+    	if( fileOpen.seekg(0, ios::end) )
+    	{
+    	   size2 = fileOpen.tellg();
+    	}
+
+    	if( size2 && fileOpen.seekg(0, ios::beg) )
+    	{
+    	   Form1->Buffer.resize(size2);
+		   fileOpen.read(&Form1->Buffer[0], size2);
+    	}
+*/
+
+}
+}
+//---------------------------------------------------------------------------
+
+

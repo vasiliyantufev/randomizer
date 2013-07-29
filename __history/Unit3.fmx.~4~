@@ -1,0 +1,61 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = #1043#1088#1072#1092#1080#1082
+  ClientHeight = 400
+  ClientWidth = 600
+  Visible = False
+  OnActivate = FormActivate
+  StyleLookup = 'backgroundstyle'
+  object Chart1: TChart
+    Position.Point = '(8,8)'
+    Width = 400.000000000000000000
+    Height = 250.000000000000000000
+    Title.Text.Strings = (
+      'TChart')
+    Zoom.Brush.Kind = bkNone
+    TabOrder = 1
+    ColorPaletteIndex = 13
+    object Series2: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      Dark3D = False
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series3: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      Dark3D = False
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series1: TLineSeries
+      Marks.Arrow.Visible = True
+      Marks.Callout.Brush.Color = claBlack
+      Marks.Callout.Arrow.Visible = True
+      Marks.Visible = False
+      Pointer.InflateMargins = True
+      Pointer.Style = psRectangle
+      Pointer.Visible = False
+      XValues.Name = 'X'
+      XValues.Order = loAscending
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+end

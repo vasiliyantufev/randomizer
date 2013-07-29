@@ -1,0 +1,300 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = #1043#1077#1085#1077#1088#1072#1090#1086#1088
+  ClientHeight = 562
+  ClientWidth = 721
+  Visible = False
+  OnCreate = FormCreate
+  StyleLookup = 'backgroundstyle'
+  object MainMenu1: TMainMenu
+    Left = 32
+    Top = 8
+    object MenuItem1: TMenuItem
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      TabOrder = 0
+      ShortCut = 0
+      Text = #1060#1072#1081#1083
+      object MenuItem2: TMenuItem
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem2Click
+        TabOrder = 0
+        ShortCut = 0
+        Text = #1057#1086#1079#1076#1072#1090#1100
+      end
+      object MenuItem3: TMenuItem
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem3Click
+        TabOrder = 1
+        ShortCut = 0
+        Text = #1054#1090#1082#1088#1099#1090#1100
+      end
+      object MenuItem5: TMenuItem
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem5Click
+        TabOrder = 2
+        ShortCut = 0
+        Text = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+      end
+      object MenuItem6: TMenuItem
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        TabOrder = 3
+        ShortCut = 0
+        Text = #1069#1082#1089#1087#1086#1088#1090
+        object MenuItem8: TMenuItem
+          Enabled = False
+          Locked = True
+          Width = 50.000000000000000000
+          Height = 50.000000000000000000
+          OnClick = MenuItem8Click
+          TabOrder = 0
+          ShortCut = 0
+          Text = 'C++'
+        end
+        object MenuItem9: TMenuItem
+          Enabled = False
+          Locked = True
+          Width = 50.000000000000000000
+          Height = 50.000000000000000000
+          OnClick = MenuItem9Click
+          TabOrder = 1
+          ShortCut = 0
+          Text = 'Python'
+        end
+        object MenuItem10: TMenuItem
+          Enabled = False
+          Locked = True
+          Width = 50.000000000000000000
+          Height = 50.000000000000000000
+          OnClick = MenuItem10Click
+          TabOrder = 2
+          ShortCut = 0
+          Text = #1040#1089#1089#1077#1084#1073#1083#1077#1088
+        end
+      end
+      object MenuItem7: TMenuItem
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem7Click
+        TabOrder = 4
+        ShortCut = 0
+        Text = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1087#1088#1086#1090#1086#1082#1086#1083
+      end
+    end
+    object MenuItem11: TMenuItem
+      Enabled = False
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      TabOrder = 1
+      ShortCut = 0
+      Text = #1043#1077#1085#1077#1088#1072#1090#1086#1088#1099
+      object MenuItem12: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem12Click
+        TabOrder = 0
+        ShortCut = 0
+        Text = #1047#1072#1087#1080#1089#1100' '#1079#1074#1091#1082#1072
+      end
+      object MenuItem13: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem13Click
+        TabOrder = 1
+        ShortCut = 0
+        Text = #1048#1084#1087#1086#1088#1090' '#1092#1072#1081#1083#1072
+      end
+      object MenuItem14: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem14Click
+        TabOrder = 2
+        ShortCut = 0
+        Text = #1058#1072#1082#1090#1086#1074#1072#1103' '#1095#1072#1089#1090#1086#1090#1072' '#1062#1055
+      end
+    end
+    object MenuItem15: TMenuItem
+      Enabled = False
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      TabOrder = 2
+      ShortCut = 0
+      TextAlign = taTrailing
+      Text = #1060#1080#1083#1100#1090#1088#1099
+      object MenuItem16: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem16Click
+        TabOrder = 0
+        ShortCut = 0
+        Text = #1057#1078#1072#1090#1080#1077
+      end
+      object MenuItem21: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem21Click
+        TabOrder = 1
+        ShortCut = 0
+        Text = #1052#1077#1090#1086#1076' '#1089#1077#1088#1077#1076#1080#1085#1085#1099#1093' '#1082#1074#1072#1076#1088#1072#1090#1086#1074
+      end
+      object MenuItem22: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem22Click
+        TabOrder = 2
+        ShortCut = 0
+        Text = #1052#1077#1090#1086#1076' '#1089#1088#1077#1076#1085#1080#1093' '#1087#1088#1086#1080#1079#1074#1077#1076#1077#1085#1080#1081
+      end
+      object MenuItem23: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem23Click
+        TabOrder = 3
+        ShortCut = 0
+        Text = #1052#1077#1090#1086#1076' '#1087#1077#1088#1077#1084#1077#1096#1080#1074#1072#1085#1080#1103
+      end
+      object MenuItem24: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem24Click
+        TabOrder = 4
+        ShortCut = 0
+        Text = #1052#1077#1090#1086#1076' '#1060#1080#1073#1086#1085#1072#1095#1095#1080
+      end
+    end
+    object MenuItem17: TMenuItem
+      Enabled = False
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      TabOrder = 3
+      ShortCut = 0
+      Text = #1058#1077#1089#1090#1099
+      object MenuItem18: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem18Click
+        TabOrder = 0
+        ShortCut = 0
+        Text = #1052#1072#1090'. '#1054#1078#1080#1076#1072#1085#1080#1077
+      end
+      object MenuItem19: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem19Click
+        TabOrder = 1
+        ShortCut = 0
+        Text = #1044#1080#1089#1087#1077#1088#1089#1080#1103
+      end
+      object MenuItem25: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem25Click
+        TabOrder = 2
+        ShortCut = 0
+        Text = 'C'#1088#1077#1076#1085#1077#1082#1074#1072#1076#1088#1072#1090#1080#1095#1085#1086#1077' '#1086#1090#1082#1083#1086#1085#1077#1085#1080#1077
+      end
+      object MenuItem26: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        TabOrder = 3
+        ShortCut = 0
+        Text = #1063#1072#1089#1090#1086#1090#1085#1099#1081' '#1090#1077#1089#1090
+      end
+    end
+    object MenuItem20: TMenuItem
+      Enabled = False
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      TabOrder = 4
+      ShortCut = 0
+      Text = #1042#1080#1079#1091#1072#1083#1080#1079#1072#1094#1080#1103
+      object MenuItem4: TMenuItem
+        Enabled = False
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        OnClick = MenuItem4Click
+        TabOrder = 0
+        ShortCut = 0
+        Text = #1043#1080#1089#1090#1086#1075#1088#1072#1084#1084#1072
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 104
+    Top = 8
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = #1060#1072#1081#1083' '#1076#1072#1085#1085#1099#1093' (.dat)|*.dat|'
+    Left = 184
+    Top = 8
+  end
+  object ListBox1: TListBox
+    Align = alClient
+    Width = 721.000000000000000000
+    Height = 540.000000000000000000
+    TabOrder = 0
+  end
+  object SaveDialog2: TSaveDialog
+    Filter = #1058#1077#1082#1089#1090#1086#1074#1099#1081' '#1092#1072#1081#1083' (.txt)|*.txt|'
+    Left = 264
+    Top = 8
+  end
+  object SaveDialog3: TSaveDialog
+    Filter = 'C++ files (.c++)|*.cpp|'
+    Left = 344
+    Top = 8
+  end
+  object SaveDialog4: TSaveDialog
+    Filter = 'Python files (.py)|*.py|'
+    Left = 424
+    Top = 8
+  end
+  object SaveDialog5: TSaveDialog
+    Filter = 'Assembler files (.asm)|*.asm|'
+    Left = 504
+    Top = 8
+  end
+  object StatusBar1: TStatusBar
+    Position.Point = '(0,540)'
+    Locked = True
+    Width = 721.000000000000000000
+    Height = 22.000000000000000000
+    TabOrder = 1
+    ShowSizeGrip = True
+  end
+end

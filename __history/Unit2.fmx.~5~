@@ -1,0 +1,67 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  ClientHeight = 111
+  ClientWidth = 285
+  Visible = False
+  StyleLookup = 'backgroundstyle'
+  object GroupBox1: TGroupBox
+    Position.Point = '(128,8)'
+    Width = 153.000000000000000000
+    Height = 100.000000000000000000
+    TabOrder = 0
+    Text = #1045#1076#1080#1085#1080#1094#1072' '#1080#1079#1084#1077#1088#1077#1085#1080#1103
+  end
+  object RadioButton1: TRadioButton
+    Position.Point = '(144,24)'
+    Width = 129.000000000000000000
+    Height = 25.000000000000000000
+    TabOrder = 1
+    IsChecked = True
+    Text = #1041#1072#1081#1090
+  end
+  object RadioButton2: TRadioButton
+    Position.Point = '(144,48)'
+    Width = 129.000000000000000000
+    Height = 25.000000000000000000
+    TabOrder = 2
+    Text = #1050#1080#1083#1086#1073#1072#1081#1090
+  end
+  object Edit1: TEdit
+    Position.Point = '(8,32)'
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    TabOrder = 3
+    KeyboardType = vktDefault
+    Password = False
+    Text = '1'
+  end
+  object Label1: TLabel
+    Position.Point = '(8,8)'
+    Width = 120.000000000000000000
+    Height = 15.000000000000000000
+    TabOrder = 4
+    Text = #1056#1072#1079#1084#1077#1088
+  end
+  object Button1: TButton
+    Position.Point = '(8,80)'
+    Width = 97.000000000000000000
+    Height = 22.000000000000000000
+    OnClick = Button1Click
+    TabOrder = 5
+    Text = #1057#1086#1079#1076#1072#1090#1100
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = #1060#1072#1081#1083' '#1076#1072#1085#1085#1099#1093' (.dat)|*.dat|'
+    Title = #1057#1086#1079#1076#1072#1090#1100
+    Left = 248
+    Top = 24
+  end
+  object RadioButton3: TRadioButton
+    Position.Point = '(144,72)'
+    Width = 120.000000000000000000
+    Height = 27.000000000000000000
+    TabOrder = 6
+    Text = #1052#1077#1075#1072#1073#1072#1081#1090
+  end
+end

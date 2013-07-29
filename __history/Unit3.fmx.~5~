@@ -1,0 +1,20 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = #1043#1088#1072#1092#1080#1082
+  ClientHeight = 400
+  ClientWidth = 600
+  Visible = False
+  OnActivate = FormActivate
+  StyleLookup = 'backgroundstyle'
+  object Chart1: TChart
+    Position.Point = '(8,8)'
+    Width = 400.000000000000000000
+    Height = 250.000000000000000000
+    Title.Text.Strings = (
+      'TChart')
+    Zoom.Brush.Kind = bkNone
+    TabOrder = 0
+    ColorPaletteIndex = 13
+  end
+end

@@ -1,0 +1,110 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <FMX.Controls.hpp>
+#include <FMX.Forms.hpp>
+#include <FMX.Dialogs.hpp>
+#include <FMX.Menus.hpp>
+#include <FMX.Types.hpp>
+#include <vector.h>
+#include <windows.h>
+#include <time.h>
+#include "mmsystem.h"
+#include <map.h>
+#include <FMX.Layouts.hpp>
+#include <FMX.ListBox.hpp>
+#include <sstream>
+#include <string>
+#include <FMX.Layouts.hpp>
+#include <FMX.ListBox.hpp>
+#include <Data.Bind.Components.hpp>
+#include <Data.Bind.EngExt.hpp>
+#include <Fmx.Bind.DBEngExt.hpp>
+#include <Fmx.Bind.Editors.hpp>
+#include <System.Bindings.Outputs.hpp>
+#include <System.Rtti.hpp>
+#pragma comment (lib,"Winmm.lib")
+
+#define DinBufSize 1024
+#define FreqDis 8000
+#define Channels 1
+#define BitPesSempl 8
+//---------------------------------------------------------------------------
+
+void fileBufferRecord(char * fileOpen);
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TMainMenu *MainMenu1;
+	TMenuItem *MenuItem1;
+	TMenuItem *MenuItem2;
+	TMenuItem *MenuItem3;
+	TMenuItem *MenuItem5;
+	TMenuItem *MenuItem6;
+	TMenuItem *MenuItem7;
+	TMenuItem *MenuItem8;
+	TMenuItem *MenuItem9;
+	TMenuItem *MenuItem10;
+	TMenuItem *MenuItem11;
+	TMenuItem *MenuItem12;
+	TMenuItem *MenuItem13;
+	TMenuItem *MenuItem14;
+	TMenuItem *MenuItem15;
+	TMenuItem *MenuItem16;
+	TMenuItem *MenuItem17;
+	TMenuItem *MenuItem18;
+	TMenuItem *MenuItem19;
+	TMenuItem *MenuItem20;
+	TOpenDialog *OpenDialog1;
+	TSaveDialog *SaveDialog1;
+	TListBox *ListBox1;
+	TSaveDialog *SaveDialog2;
+	TSaveDialog *SaveDialog3;
+	TSaveDialog *SaveDialog4;
+	TSaveDialog *SaveDialog5;
+	TMenuItem *MenuItem4;
+	TStatusBar *StatusBar1;
+	TMenuItem *MenuItem21;
+	TMenuItem *MenuItem22;
+	TMenuItem *MenuItem23;
+	TMenuItem *MenuItem24;
+	TMenuItem *MenuItem25;
+	TMenuItem *MenuItem26;
+	void __fastcall MenuItem2Click(TObject *Sender);
+	void __fastcall MenuItem3Click(TObject *Sender);
+	void __fastcall MenuItem5Click(TObject *Sender);
+	void __fastcall MenuItem12Click(TObject *Sender);
+	void __fastcall MenuItem14Click(TObject *Sender);
+	void __fastcall MenuItem7Click(TObject *Sender);
+	void __fastcall MenuItem16Click(TObject *Sender);
+	void __fastcall MenuItem8Click(TObject *Sender);
+	void __fastcall MenuItem10Click(TObject *Sender);
+	void __fastcall MenuItem9Click(TObject *Sender);
+	void __fastcall MenuItem4Click(TObject *Sender);
+	void __fastcall MenuItem13Click(TObject *Sender);
+	void __fastcall FormCreate(TObject *Sender);
+	void __fastcall MenuItem21Click(TObject *Sender);
+	void __fastcall MenuItem22Click(TObject *Sender);
+	void __fastcall MenuItem23Click(TObject *Sender);
+	void __fastcall MenuItem24Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	vector<char> Buffer;
+	vector<char> fileBuffer;
+	vector<char> sortBuffer;
+	vector<char> gaussBuffer;
+	map<int, int> rasp;
+	char * CPBuffer;
+	char * audioBuffer;
+	WAVEFORMATEX WaveFormat;
+	WAVEHDR WaveHdrIn1;
+	HWAVEIN hWaveIn;
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif
